@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="contact-section">
+        <h1>Contact Us</h1>
+        <p>Have any questions or inquiries? Fill out the form below and we'll get back to you as soon as possible.</p>
+
+        <form action="#" method="post">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+
+        <div class="static-message">
+            <p>Thank you for reaching out! We will respond to your inquiry shortly.</p>
+        </div>
+    </section>
+    <footer>
+         &copy; 2024 Eco-Friendly Products. All rights reserved.
+    </footer>
+    <script>
+        document.getElementById("Contact.html").addEventListener("submit", function(event) {
+            event.preventDefault();
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>
